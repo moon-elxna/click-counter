@@ -12,3 +12,7 @@ body {
     justify-content: center;
     gap: 10px;
 }
+
+p#counter {
+    font-size: 40px;
+}
