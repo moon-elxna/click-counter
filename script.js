@@ -1,7 +1,15 @@
 fromLocalstorage()
 
 function fromLocalstorage(){
-    document.getElementById("counter").innerHTML = localStorage.getItem("counter");
+    const control = localStorage.getItem("counter");
+    if(control != 0) {
+        document.getElementById("counter").innerHTML = localStorage.getItem("counter");
+    }
+    else{
+        document.getElementById("counter").innerHTML = 0;
+    }
+
+    
 }
 
 function decreaseNumber(){
