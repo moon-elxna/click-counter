@@ -2,6 +2,8 @@ fromLocalstorage()
 
 function fromLocalstorage(){
     const control = localStorage.getItem("counter");
+    console.log(control)
+    
     if(control != 0) {
         document.getElementById("counter").innerHTML = localStorage.getItem("counter");
     }
