@@ -1,5 +1,14 @@
+fromLocalstorage()
+
+function fromLocalstorage(){
+    console.log("Hello");
+    const num = localStorage.setItem("counter");
+    console.log(num);
+}
+
 function decreaseNumber(){
-    document.getElementById("counter").innerHTML = Number(document.getElementById("counter").innerHTML) - 1;
+
+    localStorage.setItem("counter", document.getElementById("counter").innerHTML = Number(document.getElementById("counter").innerHTML) - 1);
 }
 
 function resetNumber(){
