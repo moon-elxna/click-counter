@@ -1,20 +1,17 @@
 fromLocalstorage()
 
 function fromLocalstorage(){
-    console.log("Hello");
-    const num = localStorage.setItem("counter");
-    console.log(num);
+    document.getElementById("counter").innerHTML = localStorage.getItem("counter");
 }
 
 function decreaseNumber(){
-
     localStorage.setItem("counter", document.getElementById("counter").innerHTML = Number(document.getElementById("counter").innerHTML) - 1);
 }
 
 function resetNumber(){
-    document.getElementById("counter").innerHTML = 0;
+    localStorage.setItem("counter", document.getElementById("counter").innerHTML = 0);
 }
 
 function increaseNumber(){
-    document.getElementById("counter").innerHTML = Number(document.getElementById("counter").innerHTML) + 1;
+    localStorage.setItem("counter", document.getElementById("counter").innerHTML = Number(document.getElementById("counter").innerHTML) + 1);
 }
