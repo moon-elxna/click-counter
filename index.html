@@ -4,10 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Click Counter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <h1>Counter</h1>
+    <p id="counter">0</p>
+    <div id="buttons">
+
+        <div>
+            <button onclick="decreaseNumber()" class="button" id="decrease">decrease</button>
+        </div>
+
+        <div>
+            <button onclick="resetNumber()" class="button" id="reset">reset</button>
+        </div>
+
+        <div>
+            <button onclick="increaseNumber()" class="button" id="increas">increas</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
