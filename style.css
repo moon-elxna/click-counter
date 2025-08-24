@@ -45,9 +45,3 @@ button:hover {
 button:active {
     background-color: #d9ece2;
 }
-
-@media (max-width: 400px) {
-    #button {
-        flex-direction: column;
-    }
-}
